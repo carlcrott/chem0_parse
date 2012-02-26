@@ -9,21 +9,9 @@ $ rails new rest_api --database=postgresql
 # configured Gemfile
 # placed config/database.yml
 
-# this could be a shitty model migration
-$ rails g scaffold employee name:string extension:integers
+$ rails g scaffold employee name:string extension:integer
 
-
-
-# This needs verified that its actually interfacing w psql
 $ bundle exec rake db:migrate
-
-WARNING: 'require 'rake/rdoctask'' is deprecated.  Please use 'require 'rdoc/task' (in RDoc 2.4.2+)' instead.
-    at /home/thrive/.rvm/gems/ruby-1.9.3-p125@restapi/gems/rake-0.9.2.2/lib/rake/rdoctask.rb
-WARNING: Global access to Rake DSL methods is deprecated.  Please include
-    ...  Rake::DSL into classes and modules which use the Rake DSL methods.
-WARNING: DSL method RestApi::Application#task called at /home/thrive/.rvm/gems/ruby-1.9.3-p125@restapi/gems/railties-3.0.5/lib/rails/application.rb:214:in `initialize_tasks'
-
-
 # sucessfully created table schema_migrations in postgreSQL
 
 
