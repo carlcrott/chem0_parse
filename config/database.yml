@@ -1,0 +1,21 @@
+# pulled from: http://whatcodecraves.com/articles/2008/02/05/setup_rails_with_postgresql/
+common: &common
+  adapter: postgresql
+  username: oscar
+  password: weiner
+  host: 127.0.0.1
+  port: 5432
+
+development:
+  <<: *common
+  database: oscarizer
+
+test:
+  <<: *common
+  database: oscarizer
+
+production:
+  <<: *common
+  database: oscarizer
+
+
