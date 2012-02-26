@@ -15,6 +15,31 @@ $ bundle exec rake db:migrate
 # sucessfully created table schema_migrations in postgreSQL
 
 
+$ rails s
+
+
+http://localhost:3000/employees
+# created new employees
+
+# created:
+#    # /new.xml
+#    <?xml version="1.0" encoding="UTF-8"?>
+#    <employee>
+#      <extension type="integer">3456</extension>
+#      <name>Randy Rhodes</name>
+#    </employee>
+
+# runs the insertion of the Randy Rhodes employee
+$ curl -v -H "Content-Type: application/xml; charset=utf-8" --data-ascii @new.xml http://localhost:3000/employees.xml
+
+# returns all employees
+$ curl http://localhost:3000/employees.xml
+
+# returns a single employee
+$ curl http://localhost:3000/employees/1.xml
+
+# deletes employee 3
+$ curl --request DELETE http://localhost:3000/employees/3.xml
 
 
 
