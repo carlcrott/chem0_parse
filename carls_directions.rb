@@ -86,28 +86,15 @@ $ rails c
 
 
 
-##### BIG QUESTION #########
-
-Jruby + Sinatra + Heroku:
-+ native on heroku
-- bastiardized gems
-process:
-  1) build out + connect up user models
 
 
---- VRS ---
-
-RoR + RJB + EC2:
-+ ec2 experience
-+ legitimate gems
-- ec2 experience
-
-process:
-  1) build out the DB entries
-  
 
 
-interface > ajax > "rails model / controller" > "RJB" > "OSCAR-4" > "model / controller" > "ORM ( activerecord )" > "DB ( postgresql )"
+
+
+
+
+
 
 
 
@@ -117,6 +104,8 @@ interface > ajax > "rails model / controller" > "RJB" > "OSCAR-4" > "model / con
 
 
 ### ------------ GENERAL NOTES  -------------
+interface > ajax > "rails model / controller" > "RJB" > "OSCAR-4" > "model / controller" > "ORM ( activerecord )" > "DB ( postgresql )"
+
 # these were not run but instead placed here as references
 
 # active-record
@@ -138,9 +127,24 @@ it's not a framework ;)"
 
 
 
-db:create_migrations
-db:migrate
+
+##### BIG QUESTION #########
+
+Jruby + Sinatra + Heroku:
++ native on heroku
+- bastiardized gems
+process:
+  1) build out + connect up user models
 
 
+--- VRS ---
 
+RoR + RJB + EC2:
++ ec2 experience
++ legitimate gems
+- ec2 experience
+
+process:
+  1) build out the DB entries
+  
 
