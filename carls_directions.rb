@@ -1,7 +1,4 @@
-
-
-
-
+# http://squarism.com/2011/04/01/how-to-write-a-ruby-rails-3-rest-api/
 
 $ rails new rest_api --database=postgresql
 
