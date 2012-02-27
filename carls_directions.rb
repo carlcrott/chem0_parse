@@ -46,6 +46,13 @@ $ curl --request DELETE http://localhost:3000/employees/3.xml
 
 
 
+#removed the employee from DB
+$ rake db:migrate VERSION=0 # drops DB back to before first migration
+# deleted the employee migration
+
+$ bundle exec rake db:migrate
+# all golden w/o employee in DB
+
 
 
 
