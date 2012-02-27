@@ -1,4 +1,8 @@
 RestApi::Application.routes.draw do
+  resources :users
+
+  resources :chemoinformatics
+
   resources :employees
 
   # The priority is based upon order of creation:

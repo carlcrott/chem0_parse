@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  input_process: MyString
+  output_process: MyString
+
+two:
+  input_process: MyString
+  output_process: MyString
