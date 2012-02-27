@@ -1,17 +1,15 @@
+require 'rubygems'
 require 'rjb'
 
 class Chemoinformatic < ActiveRecord::Base
 
+  def oscar_parse
+    # sourced from rails_projects/rjb_oscar
 
-  # sourced from rails_projects/rjb_oscar
-  def oscar_parse(process)
-    puts process.to_s
-
+    # this can probably be placed outside of this method
     jars = [
-      "/home/thrive/rails_projects/rest_api/jars/commons-lang-2.1.jar", 
-      "/home/thrive/rails_projects/rest_api/jars/oscar4-all-4.1-with-dependencies.jar", 
-#      "#{Rails.root}/jars/commons-lang-2.1.jar", 
-#      "#{Rails.root}/jars/oscar4-all-4.1-with-dependencies.jar", 
+      "#{Rails.root}/jars/commons-lang-2.1.jar", 
+      "#{Rails.root}/jars/oscar4-all-4.1-with-dependencies.jar", 
     ]
 
     Rjb::load(classpath = jars.join(':'), jvmargs=[])
@@ -24,14 +22,21 @@ class Chemoinformatic < ActiveRecord::Base
 
     entities = oscar.findAndResolveNamedEntities(name).toArray
 
+    codified = []
+
     for ne in entities
       puts ne.getSurface()
+      codified << ne.getSurface()
 
-      # puts ne.methods
       inchi = ne.getFirstChemicalStructure(format);
-      inchi.methods.include?('toString') == true ? (puts inchi.toString) : ""
-
+      if inchi.methods.include?('toString') == true 
+        puts inchi.toString
+        codified << inchi.toString
+      end
     end
+
+    # can return this as JSON
+    return codified.join("***")
   end
 
 

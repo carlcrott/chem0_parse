@@ -59,11 +59,16 @@ $ bundle exec rake db:migrate
 
 
 
+# fire up the rails console:
+$ rails c
 
+# create a new instance
+> u = Chemoinformatic.new # Chemoinformatic ... not "Chemoinformatics"
 
+# Run that PARSE
+> u.oscar_parse
 
-
-
+### AWESOME ###
 
 
 
