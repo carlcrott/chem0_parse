@@ -27,16 +27,16 @@ http://localhost:3000/employees
 #    </employee>
 
 # runs the insertion of the Randy Rhodes employee
-$ curl -v -H "Content-Type: application/xml; charset=utf-8" --data-ascii @new.xml http://localhost:3000/employees.xml
+$ curl -v -H "Content-Type: application/xml; charset=utf-8" --data-ascii @new.xml http://127.0.0.1:3000/users.xml
 
 # returns all employees
-$ curl http://localhost:3000/employees.xml
+$ curl http://localhost:3000/users.xml
 
 # returns a single employee
-$ curl http://localhost:3000/employees/1.xml
+$ curl http://localhost:3000/users/1.xml
 
 # deletes employee 3
-$ curl --request DELETE http://localhost:3000/employees/3.xml
+$ curl --request DELETE http://localhost:3000/users/3.xml
 
 
 

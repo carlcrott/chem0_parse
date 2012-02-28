@@ -23,9 +23,20 @@ http://wiki.opscode.com/display/chef/Fast+Start+Guide
 
 
 
-
 Knife = Chef command line tool
 Shef is to Chef  as script/console is to rails
+
+
+
+1) create server
+2) ssh into server
+3) connect to main server
+4) make roles
+5) upload roles
+6) download cookbooks
+7) git commits on the software assembly
+
+
 
 
 # fire up server on Linode/Rackspace/Slicehost
@@ -107,6 +118,20 @@ $ chef-client
 
 
 
+
+
+
+
+
+
+
+
+
+
+#### ------------ Resources -----------------
+
+# chef solo w vagrant
+http://vagrantup.com/docs/provisioners/chef_solo.html
 
 
 
