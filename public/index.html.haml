@@ -1,0 +1,62 @@
+!!!
+%html
+  %head
+    = stylesheet_link_tag 'everywhere'
+    %title Ruby on Rails: Welcome aboard
+    :javascript
+      function about() {
+        info = document.getElementById('about-content');
+        if (window.XMLHttpRequest)
+          { xhr = new XMLHttpRequest(); }
+        else
+          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
+        xhr.open("GET","rails/info/properties",false);
+        xhr.send("");
+        info.innerHTML = xhr.responseText;
+        info.style.display = 'block'
+      }
+      %body
+    #page
+      #sidebar
+        %ul#sidebar-items
+          %li
+            %h3 Browse the documentation
+            %ul.links
+              %li
+                %a{:href => "http://api.rubyonrails.org/"} Rails API
+              %li
+                %a{:href => "http://stdlib.rubyonrails.org/"} Ruby standard library
+              %li
+                %a{:href => "http://corelib.rubyonrails.org/"} Ruby core
+              %li
+                %a{:href => "http://guides.rubyonrails.org/"} Rails Guides
+      #content
+        #header
+          %h1 Welcome aboard
+          %h2 You’re riding Ruby on Rails!
+        #about
+          %h3
+            %a{:href => "rails/info/properties", :onclick => "about(); return false"} About your application’s environment
+          #about-content{:style => "display: none"}
+        #getting-started
+          %h1 Getting started
+          %h2 Here’s how to get rolling:
+          %ol
+            %li
+              %h2
+                Use
+                %code rails generate
+                to create your models and controllers
+              %p To see all available options, run it without parameters.
+            %li
+              %h2 Set up a default route and remove or rename this file
+              %p Routes are set up in config/routes.rb.
+            %li
+              %h2 Create your database
+              %p
+                Run
+                %code rake db:migrate
+                to create your database. If you're not using SQLite (the default), edit
+                %code config/database.yml
+                with your username and password.
+      #footer  

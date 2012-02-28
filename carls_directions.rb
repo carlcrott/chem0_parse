@@ -57,7 +57,7 @@ $ bundle exec rake db:migrate
 
 
 
-
+# ------------------------ Handled by heroku JVM / sinatra API --------------------------
 
 # fire up the rails console:
 $ rails c
@@ -68,15 +68,24 @@ $ rails c
 # Run that PARSE
 > u.oscar_parse
 
-### AWESOME ###
+# --------------------------------------------------------------------------------------
 
 
 
 
+## Began UI work
+
+# added UI gemfiles
+gem 'haml'
+gem 'sass'
+gem 'compass'
+
+# rename .erb to .haml
+app/views/account/login.html.erb → app/views/account/login.html.haml
 
 
-
-
+# creates link to everywhere.css
+= stylesheet_link_tag "everywhere"
 
 
 
