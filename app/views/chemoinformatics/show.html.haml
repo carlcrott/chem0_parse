@@ -1,0 +1,10 @@
+%p#notice= notice
+%p
+  %b Input process:
+  = @chemoinformatic.input_process
+%p
+  %b Output process:
+  = @chemoinformatic.output_process
+= link_to 'Edit', edit_chemoinformatic_path(@chemoinformatic)
+|
+\#{link_to 'Back', chemoinformatics_path}

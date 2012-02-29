@@ -1,0 +1,17 @@
+%h1 Listing chemoinformatics
+%table
+  %tr
+    %th Input process
+    %th Output process
+    %th
+    %th
+    %th
+  - @chemoinformatics.each do |chemoinformatic|
+    %tr
+      %td= chemoinformatic.input_process
+      %td= chemoinformatic.output_process
+      %td= link_to 'Show', chemoinformatic
+      %td= link_to 'Edit', edit_chemoinformatic_path(chemoinformatic)
+      %td= link_to 'Destroy', chemoinformatic, :confirm => 'Are you sure?', :method => :delete
+%br/
+= link_to 'New Chemoinformatic', new_chemoinformatic_path
