@@ -13,7 +13,7 @@
     = f.text_field :input_process
   .field
     = f.label :output_process
-    %br/
-    = f.text_field :output_process
+    .text_area_surround
+      = f.text_area :output_process, :id => "chemical_process_for_parser"
   .actions
-    = f.submit
+    = f.submit "parse", :class => "button"

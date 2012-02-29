@@ -50,10 +50,6 @@ body.two-col
     +column($content-columns, true)
 
 body
-
-
-
-body
   background-color: #5f7395
 
   font-family: verdana, arial, helvetica, sans-serif
@@ -92,16 +88,27 @@ a
   padding: 0.5em
 
 
+#chemical_process_for_parser
+  +border-radius(3px)
+  +box-shadow(#222222 1px 1px 3px 0px inset)
+  width: 366px
+  padding: 3px
 
-
+.text_area_surround
+  +border-radius(6px)
+  +background-image(linear-gradient(bottom, #111111 5%, #444444 99.5%, #888888 100%))
+  border: 1px solid #000000
+  padding: 10px 10px 6px 10px
 
 #main_container
   margin: auto
   padding: 20px
   width: 400px
   height: 200px
+  text-align: center
 
 .button
+  margin-top: 5px
   +box-shadow(#ffffff 0px 1px 0px 0px inset)
   +background-image(linear-gradient(top, #ededed 5%, #dfdfdf 100%))
   +border-radius(5px)
@@ -110,7 +117,7 @@ a
   font-family: arial
   font-size: 18px
   font-weight: bold
-  padding: 17px 70px
+  padding: 17px 80px
   text-decoration: none
   text-shadow: 1px 1px 0px #ffffff
   cursor: pointer
@@ -120,4 +127,6 @@ a
 .button:active
   position: relative
   top: 1px
+
+
 
