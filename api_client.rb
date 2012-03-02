@@ -1,4 +1,4 @@
-require './lib/api.rb'
+require './lib/api.rb' #this might be loaded by default?
 require 'nokogiri'
  
 # CRUD example with an api

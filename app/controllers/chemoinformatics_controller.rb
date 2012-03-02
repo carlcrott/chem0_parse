@@ -44,6 +44,8 @@ class ChemoinformaticsController < ApplicationController
 
     respond_to do |format|
       if @chemoinformatic.save
+        # insert push w nokogiri here
+
         format.html { redirect_to(@chemoinformatic, :notice => 'Chemoinformatic was successfully created.') }
         format.xml  { render :xml => @chemoinformatic, :status => :created, :location => @chemoinformatic }
       else
