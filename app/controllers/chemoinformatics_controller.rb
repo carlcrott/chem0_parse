@@ -1,3 +1,5 @@
+require "#{Rails.root}/lib/api.rb" # wtf is with /app/lib .. isnt it supposed to load by default?
+
 class ChemoinformaticsController < ApplicationController
   # GET /chemoinformatics
   # GET /chemoinformatics.xml
@@ -42,9 +44,15 @@ class ChemoinformaticsController < ApplicationController
   def create
     @chemoinformatic = Chemoinformatic.new(params[:chemoinformatic])
 
+    # populate the API request here
+    # might need to do some crazy sanitization here ... as these could be nutso
+    @push = Api.new
+
+
     respond_to do |format|
       if @chemoinformatic.save
         # insert push w nokogiri here
+
 
         format.html { redirect_to(@chemoinformatic, :notice => 'Chemoinformatic was successfully created.') }
         format.xml  { render :xml => @chemoinformatic, :status => :created, :location => @chemoinformatic }
