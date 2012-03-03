@@ -84,24 +84,30 @@ gem 'compass'
 app/views/account/login.html.erb → app/views/account/login.html.haml
 
 
-# creates link to everywhere.css
-= stylesheet_link_tag "everywhere"
+
+
+
+# for testing purposes run rails on diff port
+rails s -p 9191
+
+
+# controller actions work ...
+# got this error:
+
+PG::Error: ERROR:  value too long for type character varying(255)
+
+
+# dropped db back
+$ rake db:migrate VERSION=0
+
+# edited migrations:
+      t.text :input_process
+      t.text :output_process
 
 
 
 
-
-
-# How to accept in POST to the sinatra EC2 instance
-- URL encode into address
-- env hash in sinatra
-
-
-
-
-
-
-
+$ bundle exec rake db:migrate
 
 
 

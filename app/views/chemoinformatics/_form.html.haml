@@ -9,11 +9,12 @@
           %li= msg
   .field
     = f.label :input_process
-    %br/
-    = f.text_field :input_process
-  .field
-    = f.label :output_process
     .text_area_surround
-      = f.text_area :output_process, :id => "chemical_process_for_parser"
+      = f.text_area :input_process, :id => "chemical_process_for_parser"
+  /
+    .field
+      = f.label :output_process
+      .text_area_surround
+        = f.text_area :output_process
   .actions
     = f.submit "parse", :class => "button"

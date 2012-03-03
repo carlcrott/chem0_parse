@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(:version => 20120227003914) do
 
   create_table "chemoinformatics", :force => true do |t|
-    t.string   "input_process"
-    t.string   "output_process"
+    t.text     "input_process"
+    t.text     "output_process"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
