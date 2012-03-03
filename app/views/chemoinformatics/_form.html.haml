@@ -8,13 +8,11 @@
         - @chemoinformatic.errors.full_messages.each do |msg|
           %li= msg
   .field
-    = f.label :input_process
     .text_area_surround
-      = f.text_area :input_process, :id => "chemical_process_for_parser"
-  /
-    .field
-      = f.label :output_process
-      .text_area_surround
-        = f.text_area :output_process
+      = f.text_area :input_process, :id => "chemical_process_input", :placeholder => "Input process"
+
   .actions
-    = f.submit "parse", :class => "button"
+    = link_to(chemoinformatics_path) do
+      = submit_tag "browse", :class => "button inline"
+    = f.submit "parse", :class => "button inline"
+

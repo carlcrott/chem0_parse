@@ -1,86 +1,37 @@
 // This import applies a global reset to any page that imports this stylesheet.
-@import blueprint/reset
+//@import blueprint/reset
 // To configure blueprint, edit the partials/base.sass file.
-@import partials/base
+//@import partials/base
 // Import all the default blueprint modules so that we can access their mixins.
-@import blueprint
+//@import blueprint
 // Import the non-default scaffolding module.
-@import blueprint/scaffolding
+//@import blueprint/scaffolding
 
 @import "compass/reset"
 @import "compass/css3/border-radius"
 @import "compass/css3/gradient"
 @import "compass/css3/box-shadow"
-
-
-// To generate css equivalent to the blueprint css but with your
-// configuration applied, uncomment:
-// @include blueprint
-
-// If you are doing a lot of stylesheet concatenation, it is suggested
-// that you scope your blueprint styles, so that you can better control
-// what pages use blueprint when stylesheets are concatenated together.
-body.bp
-  +blueprint-typography(true)
-  +blueprint-utilities
-  +blueprint-debug
-  +blueprint-interaction
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
-form.bp
-  +blueprint-form
-  // You'll probably want to remove the scaffolding once you start styling your site.
-  +blueprint-scaffolding
-
-// Page layout can be done using mixins applied to your semantic classes and IDs:
-body.two-col
-  #container
-    +container
-  #header, #footer
-    +column($blueprint-grid-columns)
-  #sidebar
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3)
-    +column($sidebar-columns)
-  #content
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3)
-    // true means it's the last column in the row
-    +column($content-columns, true)
+@import "compass/css3/opacity"
 
 body
-  background-color: #5f7395
-
-  font-family: verdana, arial, helvetica, sans-serif
+  background-color: #BCED91
+  font-family: arial
   font-size: 13px
   line-height: 18px
 
 p, ol, ul, td
-  font-family: verdana, arial, helvetica, sans-serif
   font-size: 13px
   line-height: 18px
-  color: red
 
 pre
   background-color: #eee
   padding: 10px
   font-size: 11px
 
-a
-  color: #000
-  &:visited
-    color: #666
-  &:hover
-    color: #fff
-    background-color: #000
 
-#main
-  background-color: #fff
-  border: solid #000 1px
-  margin: 5em
-  height: 30em
-  padding: 1em
+
+.inline
+  display: inline-table
 
 #notice
   background-color: #e1facf
@@ -88,7 +39,7 @@ a
   padding: 0.5em
 
 
-#chemical_process_for_parser
+#chemical_process_input
   +border-radius(3px)
   +box-shadow(#222222 1px 1px 3px 0px inset)
   width: 366px
@@ -99,34 +50,57 @@ a
   +background-image(linear-gradient(bottom, #111111 5%, #444444 99.5%, #888888 100%))
   border: 1px solid #000000
   padding: 10px 10px 6px 10px
+  width: 378px
 
 #main_container
+  +border-radius(10px)
+  background-color: #333
   margin: auto
-  padding: 20px
-  width: 400px
-  height: 200px
+  padding: 10px
+  width: 470px
+  text-align: center
+  margin-top: 30px
+
+#parse_options
+  margin-right: 17px
+  display: inline-table
+  vertical-align: top
   text-align: center
 
-.button
+#new_chemoinformatic
+  display: inline-table
+  vertical-align: top
+
+.button, .parse_box
   margin-top: 5px
   +box-shadow(#ffffff 0px 1px 0px 0px inset)
   +background-image(linear-gradient(top, #ededed 5%, #dfdfdf 100%))
   +border-radius(5px)
-  border: 1px solid #dcdcdc
+  border: 1px solid #000
   color: #777777
-  font-family: arial
   font-size: 18px
   font-weight: bold
-  padding: 17px 80px
+  padding: 17px 40px
   text-decoration: none
   text-shadow: 1px 1px 0px #ffffff
   cursor: pointer
-.button:hover
+  font-family: arial
+  width: 180px
+  margin: 10px auto 0 auto
+.button:hover, .parse_box:hover
   background-color: #dfdfdf
   +background-image(linear-gradient(bottom, #ededed 5%, #dfdfdf 100%))
-.button:active
+.button:active, .parse_box:active
   position: relative
   top: 1px
+
+.parse_box
+  margin: auto
+  padding: 7px
+  width: 30px
+  height: 30px
+  margin-bottom: 10px
+
 
 
 
