@@ -92,6 +92,26 @@ app/views/account/login.html.erb → app/views/account/login.html.haml
 
 
 
+# How to accept in POST to the sinatra EC2 instance
+- URL encode into address
+- env hash in sinatra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -135,25 +155,4 @@ it's not a framework ;)"
 
 
 
-
-
-##### BIG QUESTION #########
-
-Jruby + Sinatra + Heroku:
-+ native on heroku
-- bastiardized gems
-process:
-  1) build out + connect up user models
-
-
---- VRS ---
-
-RoR + RJB + EC2:
-+ ec2 experience
-+ legitimate gems
-- ec2 experience
-
-process:
-  1) build out the DB entries
-  
 
