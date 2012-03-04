@@ -12,6 +12,7 @@
 @import "compass/css3/gradient"
 @import "compass/css3/box-shadow"
 @import "compass/css3/opacity"
+@import "compass/utilities/tables/alternating-rows-and-columns"
 
 body
   background-color: #222
@@ -43,6 +44,11 @@ pre
   border: solid #97C36d 1px
   padding: 0.5em
 
+.display_table
+  $table-color : #7a98c6
+  +alternating-rows-and-columns($table-color, adjust-hue($table-color, -10deg), #111)
+  th, td
+    padding: 5px
 
 #chemical_process_input
   +border-radius(3px)
@@ -58,17 +64,25 @@ pre
   width: 378px
 
 #main_container
-  width: 470px
-  margin: auto
   text-align: center
   margin-top: 30px
+  width: 960px
+  margin: 20px auto
 
 h1
   font-size: 40px
+  margin-bottom: 10px
+
+#app_front
+  width: 470px
+  margin: auto
+
+#title
   font-weight: bold
   color: #555
   margin-top: 10px
   font-family: 'Economica', sans-serif
+
 
 #header_container, #parse_container
   width: 470px

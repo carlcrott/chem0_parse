@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 16, ../../app/stylesheets/screen.sass */
+/* line 17, ../../app/stylesheets/screen.sass */
 body {
   background-color: #222222;
   background-image: url("/images/bg.jpg");
@@ -72,42 +72,79 @@ body {
   line-height: 18px;
 }
 
-/* line 23, ../../app/stylesheets/screen.sass */
+/* line 24, ../../app/stylesheets/screen.sass */
 font {
   font-family: arial;
 }
 
-/* line 26, ../../app/stylesheets/screen.sass */
+/* line 27, ../../app/stylesheets/screen.sass */
 p, ol, ul, td {
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 30, ../../app/stylesheets/screen.sass */
+/* line 31, ../../app/stylesheets/screen.sass */
 a {
   text-decoration: none;
 }
 
-/* line 33, ../../app/stylesheets/screen.sass */
+/* line 34, ../../app/stylesheets/screen.sass */
 pre {
   background-color: #eeeeee;
   padding: 10px;
   font-size: 11px;
 }
 
-/* line 38, ../../app/stylesheets/screen.sass */
+/* line 39, ../../app/stylesheets/screen.sass */
 .inline {
   display: inline-table;
 }
 
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 #notice {
   background-color: #e1facf;
   border: solid #97c36d 1px;
   padding: 0.5em;
 }
 
-/* line 47, ../../app/stylesheets/screen.sass */
+/* line 2, ../../../../.rvm/gems/ruby-1.9.3-p125@restapi/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.display_table th {
+  background-color: white;
+}
+/* line 4, ../../../../.rvm/gems/ruby-1.9.3-p125@restapi/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.display_table th.even, .display_table th:nth-child(2n) {
+  background-color: #eeeeee;
+}
+/* line 7, ../../../../.rvm/gems/ruby-1.9.3-p125@restapi/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.display_table tr.odd td {
+  background-color: #7aa5c6;
+}
+/* line 9, ../../../../.rvm/gems/ruby-1.9.3-p125@restapi/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.display_table tr.odd td.even, .display_table tr.odd td:nth-child(2n) {
+  background-color: #6994b5;
+}
+/* line 12, ../../../../.rvm/gems/ruby-1.9.3-p125@restapi/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.display_table tr.even td {
+  background-color: #7a98c6;
+}
+/* line 14, ../../../../.rvm/gems/ruby-1.9.3-p125@restapi/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.display_table tr.even td.even, .display_table tr.even td:nth-child(2n) {
+  background-color: #6987b5;
+}
+/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p125@restapi/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.display_table tfoot th, .display_table tfoot td {
+  background-color: white;
+}
+/* line 19, ../../../../.rvm/gems/ruby-1.9.3-p125@restapi/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.display_table tfoot th.even, .display_table tfoot th:nth-child(2n), .display_table tfoot td.even, .display_table tfoot td:nth-child(2n) {
+  background-color: #eeeeee;
+}
+/* line 50, ../../app/stylesheets/screen.sass */
+.display_table th, .display_table td {
+  padding: 5px;
+}
+
+/* line 53, ../../app/stylesheets/screen.sass */
 #chemical_process_input {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -123,7 +160,7 @@ pre {
   padding: 3px;
 }
 
-/* line 53, ../../app/stylesheets/screen.sass */
+/* line 59, ../../app/stylesheets/screen.sass */
 .text_area_surround {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -142,29 +179,40 @@ pre {
   width: 378px;
 }
 
-/* line 60, ../../app/stylesheets/screen.sass */
+/* line 66, ../../app/stylesheets/screen.sass */
 #main_container {
-  width: 470px;
-  margin: auto;
   text-align: center;
   margin-top: 30px;
+  width: 960px;
+  margin: 20px auto;
 }
 
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 72, ../../app/stylesheets/screen.sass */
 h1 {
   font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* line 76, ../../app/stylesheets/screen.sass */
+#app_front {
+  width: 470px;
+  margin: auto;
+}
+
+/* line 80, ../../app/stylesheets/screen.sass */
+#title {
   font-weight: bold;
   color: #555555;
   margin-top: 10px;
   font-family: "Economica", sans-serif;
 }
 
-/* line 73, ../../app/stylesheets/screen.sass */
+/* line 87, ../../app/stylesheets/screen.sass */
 #header_container, #parse_container {
   width: 470px;
 }
 
-/* line 75, ../../app/stylesheets/screen.sass */
+/* line 89, ../../app/stylesheets/screen.sass */
 #header_container {
   -moz-border-radius: 10px 10px 0px 0px;
   -webkit-border-radius: 10px 10px 0px 0px;
@@ -178,24 +226,24 @@ h1 {
   border-bottom: solid 1px #999999;
 }
 
-/* line 81, ../../app/stylesheets/screen.sass */
+/* line 95, ../../app/stylesheets/screen.sass */
 #title_container {
   width: 320px;
   position: relative;
   top: 10px;
 }
 
-/* line 85, ../../app/stylesheets/screen.sass */
+/* line 99, ../../app/stylesheets/screen.sass */
 #browse_button {
   width: 64px;
 }
 
-/* line 87, ../../app/stylesheets/screen.sass */
+/* line 101, ../../app/stylesheets/screen.sass */
 #chemo_index_link {
   width: 64px;
 }
 
-/* line 90, ../../app/stylesheets/screen.sass */
+/* line 104, ../../app/stylesheets/screen.sass */
 #parse_container {
   -moz-border-radius: 0px 0px 10px 10px;
   -webkit-border-radius: 0px 0px 10px 10px;
@@ -226,7 +274,7 @@ h1 {
   position: relative;
 }
 
-/* line 101, ../../app/stylesheets/screen.sass */
+/* line 115, ../../app/stylesheets/screen.sass */
 #parse_options {
   margin-right: 20px;
   display: inline-table;
@@ -234,13 +282,13 @@ h1 {
   text-align: center;
 }
 
-/* line 107, ../../app/stylesheets/screen.sass */
+/* line 121, ../../app/stylesheets/screen.sass */
 #new_chemoinformatic {
   display: inline-table;
   vertical-align: top;
 }
 
-/* line 111, ../../app/stylesheets/screen.sass */
+/* line 125, ../../app/stylesheets/screen.sass */
 .button, .parse_box {
   margin-top: 5px;
   -moz-box-shadow: white 0px 1px 0px 0px inset;
@@ -272,7 +320,7 @@ h1 {
   margin: 10px auto 0 auto;
 }
 
-/* line 127, ../../app/stylesheets/screen.sass */
+/* line 141, ../../app/stylesheets/screen.sass */
 .button:hover, .parse_box:hover {
   background-color: #dfdfdf;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, #ededed), color-stop(100%, #dfdfdf));
@@ -283,13 +331,13 @@ h1 {
   background-image: linear-gradient(bottom, #ededed 5%, #dfdfdf 100%);
 }
 
-/* line 130, ../../app/stylesheets/screen.sass */
+/* line 144, ../../app/stylesheets/screen.sass */
 .button:active, .parse_box:active {
   position: relative;
   top: 1px;
 }
 
-/* line 134, ../../app/stylesheets/screen.sass */
+/* line 148, ../../app/stylesheets/screen.sass */
 .parse_box {
   margin: auto;
   padding: 7px;
