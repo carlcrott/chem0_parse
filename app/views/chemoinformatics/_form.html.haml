@@ -9,10 +9,8 @@
           %li= msg
   .field
     .text_area_surround
-      = f.text_area :input_process, :id => "chemical_process_input", :placeholder => "Input process"
+      = f.text_area :input_process, :id => "chemical_process_input", :placeholder => "input a chemical process to be parsed"
 
   .actions
-    = link_to(chemoinformatics_path) do
-      = submit_tag "browse", :class => "button inline"
-    = f.submit "parse", :class => "button inline"
+    = f.submit "parse", :class => "button", :disable_with => "waiting..."
 

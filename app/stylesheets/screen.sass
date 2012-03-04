@@ -14,21 +14,26 @@
 @import "compass/css3/opacity"
 
 body
-  background-color: #BCED91
+  background-color: #222
+  background-image: url("/images/bg.jpg")
   font-family: arial
   font-size: 13px
   line-height: 18px
+
+font
+  font-family: arial
 
 p, ol, ul, td
   font-size: 13px
   line-height: 18px
 
+a
+  text-decoration: none
+
 pre
   background-color: #eee
   padding: 10px
   font-size: 11px
-
-
 
 .inline
   display: inline-table
@@ -53,16 +58,48 @@ pre
   width: 378px
 
 #main_container
-  +border-radius(10px)
-  background-color: #333
-  margin: auto
-  padding: 10px
   width: 470px
+  margin: auto
   text-align: center
   margin-top: 30px
 
+h1
+  font-size: 40px
+  font-weight: bold
+  color: #555
+  margin-top: 10px
+  font-family: 'Economica', sans-serif
+
+#header_container, #parse_container
+  width: 470px
+#header_container
+  +border-radius(10px 10px 0px 0px)
+  text-align: left
+  background-color: #E8E8E8
+  padding: 0 20px 20px
+  border-bottom: solid 1px #999
+#title_container
+  width: 320px
+  position: relative
+  top: 10px
+#browse_button
+  width: 64px
+#chemo_index_link
+  width: 64px
+
+#parse_container
+  +border-radius(0px 0px 10px 10px)
+  background-color: #888
+
+  +background-image(linear-gradient(bottom, #edc491 50%, #f0e7ad 100%))
+  +background-image(linear-gradient(top, #e6dda8 50%, #f0e7ad 100%))
+  +background-image(linear-gradient(top, #e6dda8 50%, #f0e7ad 100%))
+
+  padding: 20px
+  position: relative
+
 #parse_options
-  margin-right: 17px
+  margin-right: 20px
   display: inline-table
   vertical-align: top
   text-align: center

@@ -1,16 +1,23 @@
-#parse_options
-  .parse_box
+#header_container
+  #title_container.inline
+    %h1 OSCAR_parse
+  #browse_button.button.inline browse
+  / = link_to(chemoinformatics_path, :id => "chemo_index_link") do
+      
 
-  .parse_box
+#parse_container
+  #parse_options
+    .parse_box
 
-  .parse_box
+    .parse_box
 
-  .parse_box
+    .parse_box
 
-  .parse_box
+    .parse_box
 
-  .parse_box
+    .parse_box
 
+    .parse_box
 
-= render 'form'
-/ = link_to 'Index', chemoinformatics_path
+  = render 'form'
+
