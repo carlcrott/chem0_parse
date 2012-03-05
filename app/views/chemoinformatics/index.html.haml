@@ -1,26 +1,39 @@
 #header_container
   #title_container.inline
-    %h1{:id => "title"} chem_browse
-  
+    %h1{:id => "title"} chem0_Browse
+    =link_to("https://bitbucket.org/wwmm/oscar4/wiki/Home", :target => "_blank") do
+      %h6 Powered by OSCAR-4 chemoinformatics
+
   = link_to(new_chemoinformatic_path, :id => "chemo_index_link") do
     #nav_button.button.inline parse
 
 
 %table{ :id => "display_table" }
   %tr
-    %th Input process
+    %th.input_process.top-left-5 Input process
     %th Output process
     %th
     %th
-    %th
-  - @chemoinformatics.each do |chemoinformatic|
-    -# returned = chemoinformatic.output_process.gsub!('\n','<br />')
+    %th.top-right-5
 
+  - @chemoinformatics.each do |chemoinformatic|
     %tr{:class=> cycle("even","odd")}
       %td= chemoinformatic.input_process
-      %td= chemoinformatic.output_process
+      %td
+        - chemoinformatic.output_process.split("**!**").each do |line|
+          = line
+          %br
+
       %td= link_to 'Show', chemoinformatic
       %td= link_to 'Edit', edit_chemoinformatic_path(chemoinformatic)
       %td= link_to 'Destroy', chemoinformatic, :confirm => 'Are you sure?', :method => :delete
+
+  %tr
+    %th.bottom-left-5
+    %th
+    %th
+    %th
+    %th.bottom-right-5
+
 %br/
 

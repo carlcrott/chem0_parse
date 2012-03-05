@@ -8,8 +8,7 @@
         - @chemoinformatic.errors.full_messages.each do |msg|
           %li= msg
   .field
-    .text_area_surround
-      = f.text_area :input_process, :id => "chemical_process_input", :placeholder => "input a chemical process to be parsed"
+    = f.text_area :input_process, :id => "chemical_process_input", :placeholder => "chemical process to be parsed"
 
   .actions
     = f.submit "parse", :class => "button", :disable_with => "waiting..."

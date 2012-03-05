@@ -84,34 +84,40 @@ p, ol, ul, td {
 }
 
 /* line 31, ../../app/stylesheets/screen.sass */
+h6 {
+  color: #999999;
+  font-weight: bold;
+}
+
+/* line 35, ../../app/stylesheets/screen.sass */
 a {
   text-decoration: none;
 }
-/* line 33, ../../app/stylesheets/screen.sass */
+/* line 37, ../../app/stylesheets/screen.sass */
 a:link, a:hover, a:active, a:visited {
   color: #444444;
 }
 
-/* line 38, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 pre {
   background-color: #eeeeee;
   padding: 10px;
   font-size: 11px;
 }
 
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 47, ../../app/stylesheets/screen.sass */
 .inline {
   display: inline-table;
 }
 
-/* line 46, ../../app/stylesheets/screen.sass */
+/* line 50, ../../app/stylesheets/screen.sass */
 #notice {
   background-color: #e1facf;
   border: solid #97c36d 1px;
   padding: 0.5em;
 }
 
-/* line 51, ../../app/stylesheets/screen.sass */
+/* line 55, ../../app/stylesheets/screen.sass */
 #display_table {
   margin-top: 10px;
 }
@@ -147,51 +153,85 @@ pre {
 #display_table tfoot th.even, #display_table tfoot th:nth-child(2n), #display_table tfoot td.even, #display_table tfoot td:nth-child(2n) {
   background-color: #eeeeee;
 }
-/* line 55, ../../app/stylesheets/screen.sass */
+/* line 59, ../../app/stylesheets/screen.sass */
 #display_table td, #display_table th {
   padding: 5px;
 }
-/* line 57, ../../app/stylesheets/screen.sass */
+/* line 61, ../../app/stylesheets/screen.sass */
 #display_table th {
   font-weight: bold;
 }
 
-/* line 60, ../../app/stylesheets/screen.sass */
-#chemical_process_input {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
-  -moz-box-shadow: #222222 1px 1px 3px 0px inset;
-  -webkit-box-shadow: #222222 1px 1px 3px 0px inset;
-  -o-box-shadow: #222222 1px 1px 3px 0px inset;
-  box-shadow: #222222 1px 1px 3px 0px inset;
-  width: 366px;
-  padding: 3px;
+/* line 64, ../../app/stylesheets/screen.sass */
+.input_process {
+  width: 250px;
 }
 
-/* line 66, ../../app/stylesheets/screen.sass */
-.text_area_surround {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, #111111), color-stop(99.5%, #444444), color-stop(100%, #888888));
-  background-image: -webkit-linear-gradient(bottom, #111111 5%, #444444 99.5%, #888888 100%);
-  background-image: -moz-linear-gradient(bottom, #111111 5%, #444444 99.5%, #888888 100%);
-  background-image: -o-linear-gradient(bottom, #111111 5%, #444444 99.5%, #888888 100%);
-  background-image: -ms-linear-gradient(bottom, #111111 5%, #444444 99.5%, #888888 100%);
-  background-image: linear-gradient(bottom, #111111 5%, #444444 99.5%, #888888 100%);
-  border: 1px solid black;
-  padding: 10px 10px 6px 10px;
-  width: 378px;
+/* line 67, ../../app/stylesheets/screen.sass */
+.top-left-5 {
+  -moz-border-radius: 5px 0px 0px 0px;
+  -webkit-border-radius: 5px 0px 0px 0px;
+  -o-border-radius: 5px 0px 0px 0px;
+  -ms-border-radius: 5px 0px 0px 0px;
+  -khtml-border-radius: 5px 0px 0px 0px;
+  border-radius: 5px 0px 0px 0px;
+}
+
+/* line 69, ../../app/stylesheets/screen.sass */
+.top-right-5 {
+  -moz-border-radius: 0px 5px 0px 0px;
+  -webkit-border-radius: 0px 5px 0px 0px;
+  -o-border-radius: 0px 5px 0px 0px;
+  -ms-border-radius: 0px 5px 0px 0px;
+  -khtml-border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 5px 0px 0px;
+}
+
+/* line 71, ../../app/stylesheets/screen.sass */
+.bottom-left-5 {
+  -moz-border-radius: 0px 0px 0px 5px;
+  -webkit-border-radius: 0px 0px 0px 5px;
+  -o-border-radius: 0px 0px 0px 5px;
+  -ms-border-radius: 0px 0px 0px 5px;
+  -khtml-border-radius: 0px 0px 0px 5px;
+  border-radius: 0px 0px 0px 5px;
 }
 
 /* line 73, ../../app/stylesheets/screen.sass */
+.bottom-right-5 {
+  -moz-border-radius: 0px 0px 5px 0px;
+  -webkit-border-radius: 0px 0px 5px 0px;
+  -o-border-radius: 0px 0px 5px 0px;
+  -ms-border-radius: 0px 0px 5px 0px;
+  -khtml-border-radius: 0px 0px 5px 0px;
+  border-radius: 0px 0px 5px 0px;
+}
+
+/* line 76, ../../app/stylesheets/screen.sass */
+#chemical_process_input {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 1px #111111;
+  width: 376px;
+  padding: 10px;
+}
+
+/* line 82, ../../app/stylesheets/screen.sass */
+.text_area_surround {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  width: 378px;
+}
+
+/* line 86, ../../app/stylesheets/screen.sass */
 #main_container {
   text-align: center;
   margin-top: 30px;
@@ -199,65 +239,56 @@ pre {
   margin: 20px auto;
 }
 
-/* line 79, ../../app/stylesheets/screen.sass */
+/* line 92, ../../app/stylesheets/screen.sass */
 h1 {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-/* line 83, ../../app/stylesheets/screen.sass */
+/* line 96, ../../app/stylesheets/screen.sass */
 #app_front {
   width: 470px;
   margin: auto;
 }
 
-/* line 87, ../../app/stylesheets/screen.sass */
-#title {
-  font-weight: bold;
-  color: white;
-  margin-top: 10px;
-  font-family: "Economica", sans-serif;
-}
-
-/* line 94, ../../app/stylesheets/screen.sass */
+/* line 103, ../../app/stylesheets/screen.sass */
 #header_container, #parse_container {
   width: 470px;
   margin: auto;
 }
 
-/* line 97, ../../app/stylesheets/screen.sass */
+/* line 106, ../../app/stylesheets/screen.sass */
 #header_container {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
   text-align: left;
-  background-color: #888888;
   padding: 0 20px 10px;
-  border-bottom: solid 1px #999999;
 }
 
-/* line 103, ../../app/stylesheets/screen.sass */
+/* line 109, ../../app/stylesheets/screen.sass */
 #title_container {
   width: 320px;
   position: relative;
-  top: 10px;
 }
 
-/* line 107, ../../app/stylesheets/screen.sass */
+/* line 112, ../../app/stylesheets/screen.sass */
+#title {
+  font-weight: bold;
+  color: white;
+  font-family: "Economica", sans-serif;
+  vertical-align: middle;
+}
+
+/* line 117, ../../app/stylesheets/screen.sass */
 #nav_button {
   width: 64px;
   text-align: center;
 }
 
-/* line 110, ../../app/stylesheets/screen.sass */
+/* line 120, ../../app/stylesheets/screen.sass */
 #chemo_index_link {
   width: 64px;
 }
 
-/* line 113, ../../app/stylesheets/screen.sass */
+/* line 123, ../../app/stylesheets/screen.sass */
 #parse_container {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -277,7 +308,7 @@ h1 {
   position: relative;
 }
 
-/* line 121, ../../app/stylesheets/screen.sass */
+/* line 131, ../../app/stylesheets/screen.sass */
 #parse_options {
   margin-right: 20px;
   display: inline-table;
@@ -285,13 +316,13 @@ h1 {
   text-align: center;
 }
 
-/* line 127, ../../app/stylesheets/screen.sass */
+/* line 137, ../../app/stylesheets/screen.sass */
 #new_chemoinformatic {
   display: inline-table;
   vertical-align: top;
 }
 
-/* line 131, ../../app/stylesheets/screen.sass */
+/* line 141, ../../app/stylesheets/screen.sass */
 .button, .parse_box {
   margin-top: 5px;
   -moz-box-shadow: white 0px 1px 0px 0px inset;
@@ -323,7 +354,7 @@ h1 {
   margin: 10px auto 0 auto;
 }
 
-/* line 147, ../../app/stylesheets/screen.sass */
+/* line 157, ../../app/stylesheets/screen.sass */
 .button:hover, .parse_box:hover {
   background-color: #dfdfdf;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, #ededed), color-stop(100%, #dfdfdf));
@@ -334,13 +365,13 @@ h1 {
   background-image: linear-gradient(bottom, #ededed 5%, #dfdfdf 100%);
 }
 
-/* line 150, ../../app/stylesheets/screen.sass */
+/* line 160, ../../app/stylesheets/screen.sass */
 .button:active, .parse_box:active {
   position: relative;
   top: 1px;
 }
 
-/* line 154, ../../app/stylesheets/screen.sass */
+/* line 164, ../../app/stylesheets/screen.sass */
 .parse_box {
   margin: auto;
   padding: 7px;

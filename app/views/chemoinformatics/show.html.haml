@@ -1,10 +1,27 @@
 %p#notice= notice
+
+%table{ :id => "display_table" }
+  %tr
+    %th.input_process.top-left-5
+      %b Input process:
+    %th.top-right-5
+      %b Output process:
+  %tr.odd
+    %td
+      = @chemoinformatic.input_process
+    %td
+      - @chemoinformatic.output_process.split("**!**").each do |line|
+        = line
+        %br
+
+
+  %tr
+    %th.bottom-left-5
+    %th.bottom-right-5
+  
 %p
-  %b Input process:
-  = @chemoinformatic.input_process
-%p
-  %b Output process:
-  = @chemoinformatic.output_process
+
+  
 = link_to 'Edit', edit_chemoinformatic_path(@chemoinformatic)
 |
 \#{link_to 'Back', chemoinformatics_path}
