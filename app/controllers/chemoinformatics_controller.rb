@@ -18,6 +18,7 @@ class ChemoinformaticsController < ApplicationController
   # GET /chemoinformatics/1
   # GET /chemoinformatics/1.xml
   def show
+    @chemoinformatics = Chemoinformatic.all
     @chemoinformatic = Chemoinformatic.find(params[:id])
 
     respond_to do |format|
@@ -40,6 +41,7 @@ class ChemoinformaticsController < ApplicationController
 
   # GET /chemoinformatics/1/edit
   def edit
+    @chemoinformatics = Chemoinformatic.all
     @chemoinformatic = Chemoinformatic.find(params[:id])
   end
 

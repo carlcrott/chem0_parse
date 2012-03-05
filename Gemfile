@@ -3,10 +3,11 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.11'
 gem 'pg'
 gem 'nokogiri'
-gem "haml"
-gem "sass"
-gem "compass", ">= 0.11.7"
-
-gem "haml-rails"
+gem 'haml'
+gem 'sass'
+gem 'compass', '>= 0.11.7'
+gem 'heroku'
+gem 'taps'
+gem 'haml-rails'
 
 

@@ -1,5 +1,17 @@
-%h1 Editing chemoinformatic
+#header_container
+  #title_container.inline
+    %h1{:id => "title"} chem0_Edit
+    =link_to("https://bitbucket.org/wwmm/oscar4/wiki/Home", :target => "_blank") do
+      %h6
+        = @chemoinformatics.count 
+        indexes parsed by OSCAR-4
+
+
+  = link_to(chemoinformatics_path, :id => "chemo_index_link") do
+    #nav_button.button.inline browse    
+
+
+
 = render 'form'
-= link_to 'Show', @chemoinformatic
-|
-\#{link_to 'Back', chemoinformatics_path}
+/= link_to 'Show', @chemoinformatic
+/#{link_to 'Back', chemoinformatics_path}

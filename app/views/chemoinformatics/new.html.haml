@@ -12,17 +12,24 @@
 
 #parse_container
   #parse_options
-    .parse_box
-
-    .parse_box
-
-    .parse_box
-
-    .parse_box
-
-    .parse_box
-
-    .parse_box
+    .parse_option_container
+      #parse_opt1.parse_box
+        1
+    .parse_option_container
+      #parse_opt2.parse_box
+        2
+    .parse_option_container
+      #parse_opt3.parse_box
+        3
+    .parse_option_container
+      #parse_opt4.parse_box
+        4
+    .parse_option_container
+      #parse_opt5.parse_box
+        5
+    .parse_option_container
+      #parse_opt6.parse_box
+        6
 
   = render 'form'
 
