@@ -5,8 +5,27 @@ class Api
   attr_accessor :uri
  
   def initialize
-    @url = "http://localhost:3000/employees"
+#    @url = "http://localhost:3000/employees"
+    @url = "http://localhost:9191/chemoinformatics"
     @uri = URI.parse @url
+  end
+
+  # Create an employee using a predefined XML template as a REST request.
+  def create_oscar(process="Default Name")
+    xml_req =
+    "<?xml version='1.0' encoding='UTF-8'?>
+    <chemoinformatic>
+      <input_process>#{process}</input_process>
+    </chemoinformatic>"
+ 
+    request = Net::HTTP::Post.new(@url)
+    request.add_field "Content-Type", "application/xml"
+    request.body = xml_req
+ 
+    http = Net::HTTP.new(@uri.host, @uri.port)
+    response = http.request(request)
+ 
+    response.body    
   end
  
   # Create an employee using a predefined XML template as a REST request.

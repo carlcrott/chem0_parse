@@ -57,6 +57,7 @@ class ChemoinformaticsController < ApplicationController
         codified_process << chunk
     end
 
+    puts codified_process.last
     @chemoinformatic.output_process = codified_process.last
 
     respond_to do |format|

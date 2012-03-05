@@ -7,6 +7,11 @@
   = link_to(new_chemoinformatic_path, :id => "chemo_index_link") do
     #nav_button.button.inline parse
 
+  %br
+
+  #index_stats
+    = @chemoinformatics.count
+    indexes
 
 %table{ :id => "display_table" }
   %tr

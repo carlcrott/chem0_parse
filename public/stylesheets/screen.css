@@ -118,6 +118,11 @@ pre {
 }
 
 /* line 55, ../../app/stylesheets/screen.sass */
+#index_stats {
+  color: white;
+}
+
+/* line 59, ../../app/stylesheets/screen.sass */
 #display_table {
   margin-top: 10px;
 }
@@ -153,21 +158,21 @@ pre {
 #display_table tfoot th.even, #display_table tfoot th:nth-child(2n), #display_table tfoot td.even, #display_table tfoot td:nth-child(2n) {
   background-color: #eeeeee;
 }
-/* line 59, ../../app/stylesheets/screen.sass */
+/* line 63, ../../app/stylesheets/screen.sass */
 #display_table td, #display_table th {
   padding: 5px;
 }
-/* line 61, ../../app/stylesheets/screen.sass */
+/* line 65, ../../app/stylesheets/screen.sass */
 #display_table th {
   font-weight: bold;
 }
 
-/* line 64, ../../app/stylesheets/screen.sass */
+/* line 68, ../../app/stylesheets/screen.sass */
 .input_process {
   width: 250px;
 }
 
-/* line 67, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 .top-left-5 {
   -moz-border-radius: 5px 0px 0px 0px;
   -webkit-border-radius: 5px 0px 0px 0px;
@@ -177,7 +182,7 @@ pre {
   border-radius: 5px 0px 0px 0px;
 }
 
-/* line 69, ../../app/stylesheets/screen.sass */
+/* line 73, ../../app/stylesheets/screen.sass */
 .top-right-5 {
   -moz-border-radius: 0px 5px 0px 0px;
   -webkit-border-radius: 0px 5px 0px 0px;
@@ -187,7 +192,7 @@ pre {
   border-radius: 0px 5px 0px 0px;
 }
 
-/* line 71, ../../app/stylesheets/screen.sass */
+/* line 75, ../../app/stylesheets/screen.sass */
 .bottom-left-5 {
   -moz-border-radius: 0px 0px 0px 5px;
   -webkit-border-radius: 0px 0px 0px 5px;
@@ -197,7 +202,7 @@ pre {
   border-radius: 0px 0px 0px 5px;
 }
 
-/* line 73, ../../app/stylesheets/screen.sass */
+/* line 77, ../../app/stylesheets/screen.sass */
 .bottom-right-5 {
   -moz-border-radius: 0px 0px 5px 0px;
   -webkit-border-radius: 0px 0px 5px 0px;
@@ -207,7 +212,7 @@ pre {
   border-radius: 0px 0px 5px 0px;
 }
 
-/* line 76, ../../app/stylesheets/screen.sass */
+/* line 80, ../../app/stylesheets/screen.sass */
 #chemical_process_input {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -220,7 +225,7 @@ pre {
   padding: 10px;
 }
 
-/* line 82, ../../app/stylesheets/screen.sass */
+/* line 86, ../../app/stylesheets/screen.sass */
 .text_area_surround {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -231,7 +236,7 @@ pre {
   width: 378px;
 }
 
-/* line 86, ../../app/stylesheets/screen.sass */
+/* line 90, ../../app/stylesheets/screen.sass */
 #main_container {
   text-align: center;
   margin-top: 30px;
@@ -239,37 +244,37 @@ pre {
   margin: 20px auto;
 }
 
-/* line 92, ../../app/stylesheets/screen.sass */
+/* line 96, ../../app/stylesheets/screen.sass */
 h1 {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-/* line 96, ../../app/stylesheets/screen.sass */
+/* line 100, ../../app/stylesheets/screen.sass */
 #app_front {
   width: 470px;
   margin: auto;
 }
 
-/* line 103, ../../app/stylesheets/screen.sass */
+/* line 107, ../../app/stylesheets/screen.sass */
 #header_container, #parse_container {
   width: 470px;
   margin: auto;
 }
 
-/* line 106, ../../app/stylesheets/screen.sass */
+/* line 110, ../../app/stylesheets/screen.sass */
 #header_container {
   text-align: left;
   padding: 0 20px 10px;
 }
 
-/* line 109, ../../app/stylesheets/screen.sass */
+/* line 113, ../../app/stylesheets/screen.sass */
 #title_container {
   width: 320px;
   position: relative;
 }
 
-/* line 112, ../../app/stylesheets/screen.sass */
+/* line 116, ../../app/stylesheets/screen.sass */
 #title {
   font-weight: bold;
   color: white;
@@ -277,18 +282,18 @@ h1 {
   vertical-align: middle;
 }
 
-/* line 117, ../../app/stylesheets/screen.sass */
+/* line 121, ../../app/stylesheets/screen.sass */
 #nav_button {
   width: 64px;
   text-align: center;
 }
 
-/* line 120, ../../app/stylesheets/screen.sass */
+/* line 124, ../../app/stylesheets/screen.sass */
 #chemo_index_link {
   width: 64px;
 }
 
-/* line 123, ../../app/stylesheets/screen.sass */
+/* line 127, ../../app/stylesheets/screen.sass */
 #parse_container {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -308,7 +313,7 @@ h1 {
   position: relative;
 }
 
-/* line 131, ../../app/stylesheets/screen.sass */
+/* line 135, ../../app/stylesheets/screen.sass */
 #parse_options {
   margin-right: 20px;
   display: inline-table;
@@ -316,13 +321,13 @@ h1 {
   text-align: center;
 }
 
-/* line 137, ../../app/stylesheets/screen.sass */
+/* line 141, ../../app/stylesheets/screen.sass */
 #new_chemoinformatic {
   display: inline-table;
   vertical-align: top;
 }
 
-/* line 141, ../../app/stylesheets/screen.sass */
+/* line 145, ../../app/stylesheets/screen.sass */
 .button, .parse_box {
   margin-top: 5px;
   -moz-box-shadow: white 0px 1px 0px 0px inset;
@@ -354,7 +359,7 @@ h1 {
   margin: 10px auto 0 auto;
 }
 
-/* line 157, ../../app/stylesheets/screen.sass */
+/* line 161, ../../app/stylesheets/screen.sass */
 .button:hover, .parse_box:hover {
   background-color: #dfdfdf;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, #ededed), color-stop(100%, #dfdfdf));
@@ -365,13 +370,13 @@ h1 {
   background-image: linear-gradient(bottom, #ededed 5%, #dfdfdf 100%);
 }
 
-/* line 160, ../../app/stylesheets/screen.sass */
+/* line 164, ../../app/stylesheets/screen.sass */
 .button:active, .parse_box:active {
   position: relative;
   top: 1px;
 }
 
-/* line 164, ../../app/stylesheets/screen.sass */
+/* line 168, ../../app/stylesheets/screen.sass */
 .parse_box {
   margin: auto;
   padding: 7px;
