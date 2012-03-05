@@ -57,7 +57,7 @@ class ChemoinformaticsController < ApplicationController
         codified_process << chunk
     end
 
-    @chemoinformatic.output_process = codified_process.join("\n")
+    @chemoinformatic.output_process = codified_process.join("<br />")
 
     respond_to do |format|
       if @chemoinformatic.save

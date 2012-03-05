@@ -1,5 +1,12 @@
-%h1 Browse Chemoinformatics
-%table.display_table
+#header_container
+  #title_container.inline
+    %h1{:id => "title"} chem_browse
+  
+  = link_to(new_chemoinformatic_path, :id => "chemo_index_link") do
+    #nav_button.button.inline parse
+
+
+%table{ :id => "display_table" }
   %tr
     %th Input process
     %th Output process
@@ -7,11 +14,13 @@
     %th
     %th
   - @chemoinformatics.each do |chemoinformatic|
-    %tr.odd
+    -# returned = chemoinformatic.output_process.gsub!('\n','<br />')
+
+    %tr{:class=> cycle("even","odd")}
       %td= chemoinformatic.input_process
       %td= chemoinformatic.output_process
       %td= link_to 'Show', chemoinformatic
       %td= link_to 'Edit', edit_chemoinformatic_path(chemoinformatic)
       %td= link_to 'Destroy', chemoinformatic, :confirm => 'Are you sure?', :method => :delete
 %br/
-= link_to 'New Chemoinformatic', new_chemoinformatic_path
+
