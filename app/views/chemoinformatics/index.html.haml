@@ -2,16 +2,15 @@
   #title_container.inline
     %h1{:id => "title"} chem0_Browse
     =link_to("https://bitbucket.org/wwmm/oscar4/wiki/Home", :target => "_blank") do
-      %h6 Powered by OSCAR-4 chemoinformatics
+      %h6
+        = @chemoinformatics.count 
+        indexes parsed by OSCAR-4
 
   = link_to(new_chemoinformatic_path, :id => "chemo_index_link") do
     #nav_button.button.inline parse
 
   %br
 
-  #index_stats
-    = @chemoinformatics.count
-    indexes
 
 %table{ :id => "display_table" }
   %tr

@@ -29,6 +29,7 @@ class ChemoinformaticsController < ApplicationController
   # GET /chemoinformatics/new
   # GET /chemoinformatics/new.xml
   def new
+    @chemoinformatics = Chemoinformatic.all
     @chemoinformatic = Chemoinformatic.new
 
     respond_to do |format|
