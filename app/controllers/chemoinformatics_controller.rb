@@ -51,7 +51,9 @@ class ChemoinformaticsController < ApplicationController
     @chemoinformatic = Chemoinformatic.new(params[:chemoinformatic])
     
     # package API call
-    uri = URI("http://ec2-107-20-14-219.compute-1.amazonaws.com:3000/parse")
+    # verify EC2 instance is running at:
+    # http://ec2-50-17-69-108.compute-1.amazonaws.com:3000/  # => Hello Hackers 3!!
+    uri = URI("http://ec2-50-17-69-108.compute-1.amazonaws.com:3000/parse")
     http = Net::HTTP.new(uri.host, uri.port)
     headers = { 'Process' => @chemoinformatic.input_process }
     codified_process = []
