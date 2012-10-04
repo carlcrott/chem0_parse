@@ -55,7 +55,7 @@ class ChemoinformaticsController < ApplicationController
     # http://ec2-50-17-69-108.compute-1.amazonaws.com:3000/  # => Hello Hackers 3!!
     uri = URI("http://ec2-50-17-69-108.compute-1.amazonaws.com:3000/parse")
     http = Net::HTTP.new(uri.host, uri.port)
-    http.read_timeout = 5 * 60 # 5 minutes
+    http.read_timeout = 10 * 60 # 5 minutes
     headers = { 'Process' => @chemoinformatic.input_process }
     codified_process = []
 
