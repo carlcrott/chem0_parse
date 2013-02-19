@@ -1,4 +1,4 @@
-RestApi::Application.routes.draw do
+Chem0parse::Application.routes.draw do
 
   match '/' => 'chemoinformatics#new'
   

@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-RestApi::Application.load_tasks
+Chem0parse::Application.load_tasks
